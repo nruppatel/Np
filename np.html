@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AngularJSfor beginners</title>
+    <script src="angular.min.js">
+    </script>
+</head>
+
+<body>
+    <h3>Add Two Numbers Using Click Event</h3>
+    <div ng-app="" ng-init="firstNumber=47; secondNumber=23">
+        <p>First Number : <input type="number" ng-model="firstNumber"></p>
+        <p>Second Number:<input type="number" ng-model="secondNumber">
+        </p> <button ng-click="Result=firstNumber + secondNumber"> Add Numbers </button>
+        <p>Result:
+        <p style="font-weight:bold; color:blue" ng-bind="Result">{{ firstNumber + secondNumber }}
+        </p>
+        </p>
+    </div>
+</body>
+
+</html>
